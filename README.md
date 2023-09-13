@@ -118,15 +118,36 @@ Lasso regression, sometimes referred to as the least absolute shrinkage and sele
 
 ### Neural Network
 Neural networks are implemented with different layers, activation functions, and loss functions.
-
-## Results
-Results for each model are presented, including performance metrics and visualizations.
+Implemented a 4 layer model.
+1. First layer with the `ReLu` activation function.
+2. The second layer is a dropout layer with a dropout of 20%.
+3. Dense layer with `ReLu`.
+4. Final layer is a dense layer with  `linear` activation function and `adam` optimizer
 
 ## Bias-Variance Tradeoff
 Bias-variance tradeoff describes the tradeoff between a model's capacity to fit the training data and its capacity to generalize to new, unobserved data.
+High variance leads to overfitting, while high bias causes underfitting
+
+Before PCA
+
+![before pca](images/bias-variance-trade-off-before-pca.jpg)
+
+
+After PCA
+
+![after pca](images/bias-variance-trade-off-after-pca.jpg)
+
+The bias-variance tradeoff aims to find the sweet spot between bias and variance. Since the values of the models are very close, a conclusion cannot be made about the model performance solely based on this. Additional accuracy metrics should be considered to conclude the best-performing model.
 
 ## Results Summary
-Summary of model performance before and after PCA.
+Before PCA
+
+![Before PCA](images/conclusion_before_pca.png)
+
+
+After PCA
+
+![After PCA](images/conclusion_after_pca.png)
 
 # Conclusion
 Concluding remarks about the project and model performance.
