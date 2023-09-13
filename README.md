@@ -128,12 +128,20 @@ Bias-variance tradeoff describes the tradeoff between a model's capacity to fit 
 ## Results Summary
 Summary of model performance before and after PCA.
 
-## Conclusion
+# Conclusion
 Concluding remarks about the project and model performance.
 
 ## Findings
-Key findings from the analysis and model implementation.
+- While using the gradient descent and stochastic gradient approaches for the Regression models, LASSO did the best, followed by Ridge and Linear
+- The Regression models did better after applying PCA than before applying PCA
+- PCA dropped the number of features to 9 principal components, which captured more than 95% variance. This brought down the number of features from the original 29
+- Neural Networks had the best performance overall before applying PCA
+- Neural Networks performed significantly worse after applying PCA. It had the worst performance among all models after PCA
+- LASSO had the same performance for both stochastic and normal gradient descent approaches
 
 ## Future Scope
-Potential directions for future work and improvements to the project.
+- Check other evaluation metrics like Adjusted R2 since R2 performance degrades as the number of features increases
+- Approaching the problem statement with Classification algorithms and comparing how well it did with Regression
+- Exploring this as a Time Series problem to forecast energy usage based on prior trends.
+- Models like ARIMA or Time Series Decomposition Algorithms could be used to predict energy Usage.
 
